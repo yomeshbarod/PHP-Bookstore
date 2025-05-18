@@ -12,9 +12,9 @@ $oEmail;
 $oPhone;
 $oAddress;
 
-$servername = "localhost";
+$servername = "database";
 $username = "root";
-$password = "";
+$password = "rootpassword";
 
 $conn = new mysqli($servername, $username, $password); 
 
@@ -101,9 +101,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 												}else{
 													$address = $_POST['address'];
 
-													$servername = "localhost";
+													$servername = "database";
 													$username = "root";
-													$password = "";
+													$password = "rootpassword";
 
 													$conn = new mysqli($servername, $username, $password); 
 
