@@ -6,9 +6,9 @@
 <?php
 session_start();
 	if(isset($_POST['ac'])){
-		$servername = "localhost";
+		$servername = "database";
 		$username = "root";
-		$password = "";
+		$password = "rootpassword";
 
 		$conn = new mysqli($servername, $username, $password);
 
@@ -33,9 +33,9 @@ session_start();
 	}
 
 	if(isset($_POST['delc'])){
-		$servername = "localhost";
+		$servername = "database";
 		$username = "root";
-		$password = "";
+		$password = "rootpassword";
 
 		$conn = new mysqli($servername, $username, $password);
 
@@ -50,9 +50,9 @@ session_start();
 		$conn->query($sql);
 	}
 
-	$servername = "localhost";
+	$servername = "database";
 	$username = "root";
-	$password = "";
+	$password = "rootpassword";
 
 	$conn = new mysqli($servername, $username, $password);
 
