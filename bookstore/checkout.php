@@ -10,9 +10,9 @@
 session_start();
 
 if(isset($_SESSION['id'])){
-	$servername = "localhost";
+	$servername = "database";
 	$username = "root";
-	$password = "";
+	$password = "rootpassword";
 
 	$conn = new mysqli($servername, $username, $password); 
 
