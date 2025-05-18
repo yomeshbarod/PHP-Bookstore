@@ -135,9 +135,9 @@ if(isset($_POST['submitButton'])){
 										}else{
 											$address = $_POST['address'];
 
-											$servername = "localhost";
+											$servername = "database";
 											$username = "root";
-											$password = "";
+											$password = "rootpassword";
 
 											$conn = new mysqli($servername, $username, $password); 
 
@@ -305,9 +305,9 @@ if(!isset($_SESSION['id'])){
 }
 
 if(isset($_POST['submitButton'])){
-	$servername = "localhost";
+	$servername = "database";
 	$username = "root";
-	$password = "";
+	$password = "rootpassword";
 
 	$conn = new mysqli($servername, $username, $password); 
 
